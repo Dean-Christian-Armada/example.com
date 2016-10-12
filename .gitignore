@@ -1,0 +1,7 @@
+.DS_STORE
+.Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+db.sqlite3
