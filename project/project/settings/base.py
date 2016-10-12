@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'fy0s43012=la#pp1hy*hxk#xjszh)(f*ptg7i7)!=e4d=p*3xy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # Application definition
 
@@ -101,11 +101,16 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
-USE_I18N = True
+USE_I18N = False # Set to False for import optimizations
 
 USE_L10N = True
 
 USE_TZ = True
+
+# Source: fideloper.com/api-etag-conditional-get
+# Use "If-None-Match" header with Etag
+# Work with client on this carefully
+USE_ETAGS = True # For cacheing mechanism
 
 
 # Static files (CSS, JavaScript, Images)
