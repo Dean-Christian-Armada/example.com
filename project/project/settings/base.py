@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
 MANUALLY_BUILT_APPS = [
     "core",
+    "sample_app",
 ]
 INSTALLED_APPS += MANUALLY_BUILT_APPS
 
