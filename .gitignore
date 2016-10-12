@@ -1,6 +1,5 @@
 .DS_STORE
 __pycache__/
-*.py[cod]
-*$py.class
+*.pyc
 .Python
 db.sqlite3
