@@ -4,17 +4,6 @@ if not settings.DEBUG:
 	print "--------"
 	print "ON PRODUCTION"
 
-	# info for the additional security settings below can be found on the bottom lines of the file
-	# SECURE_HSTS_SECONDS = 3600
-	# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-	# SESSION_COOKIE_SECURE = True
-	# CSRF_COOKIE_SECURE = True
-	SECURE_CONTENT_TYPE_NOSNIFF = True
-	SECURE_BROWSER_XSS_FILTER = True 
-	CSRF_COOKIE_HTTPONLY = True
-	X_FRAME_OPTIONS = "DENY"
-
-
 	ALLOWED_HOSTS = ["*"] # A wildcard allows all hosts but it is not secure, change it to a domain name, IP address
 
 	# Database
@@ -30,11 +19,18 @@ if not settings.DEBUG:
     	}
     }
 
+	# info for the additional security settings below can be found on the bottom lines of the file
+	# SECURE_HSTS_SECONDS = 3600
+	# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+	# SESSION_COOKIE_SECURE = True
+	# CSRF_COOKIE_SECURE = True
+	SECURE_CONTENT_TYPE_NOSNIFF = True
+	SECURE_BROWSER_XSS_FILTER = True 
+	CSRF_COOKIE_HTTPONLY = True
+	X_FRAME_OPTIONS = "DENY"
 
 
-# THE ADDITIONAL OPTIONS MUST BE BEFORE ALLOWED_HOSTS
-#
-#
+
 # SECURE_CONTENT_TYPE_NOSNIFF = True
 	# serves your pages with an "x-content-type-options: nosniff" header
 	# prevents "mime" based attacks, meaning it instructs the browser not to override the response content-type
