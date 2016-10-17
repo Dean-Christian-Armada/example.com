@@ -15,7 +15,7 @@ if not settings.DEBUG:
 	X_FRAME_OPTIONS = "DENY"
 
 
-	ALLOWED_HOSTS = ["example.com"]
+	ALLOWED_HOSTS = ["*"] # A wildcard allows all hosts but it is not secure, change it to a domain name, IP address
 
 	# Database
 	# https://docs.djangoproject.com/en/1.10/ref/settings/#databases
