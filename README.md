@@ -1,4 +1,4 @@
-## MOST BASIC
+## MAKE BASIC PROJECT STRUCTURE
 ```
 mkdir example.com
 cd example.com
