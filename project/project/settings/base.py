@@ -114,15 +114,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
-# UNCOMMENT STATIC ROOT to run collectstatic
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-# COMMENT STATIC_PATH to run collecstatic
-STATIC_PATH = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-
-# COMMENT STATICFIELS_DIRS to run collecstatic
-STATICFILES_DIRS = (STATIC_PATH, )
