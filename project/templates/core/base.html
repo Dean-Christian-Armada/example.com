@@ -18,7 +18,7 @@
 		<link rel="icon" href="{% static 'images/favicon.ico' %}">
 
 		<title>{% block title %} Default Title {% endblock %}</title>
-		{% include 'header_css.html' %}	
+		{% include 'head_external_files.html' %}	
 	</head>
 	<body>
 		{% block header_content %}
@@ -32,7 +32,5 @@
 		{% block footer_content %}
 			{% include 'footer.html' %}
 		{% endblock %}
-
-		{% include 'footer_js.html' %}
 	</body>
 </html>
